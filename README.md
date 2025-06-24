@@ -1,6 +1,6 @@
 # React TypeScript Portfolio (JavaScript) FINAL PROJECT
 
-Đây là source code final (JavaScript) cho series React TypeScript Portfolio
+Đây là source code React TypeScript Portfolio
 
 ### Môi trường chạy dự án: Node.js v20.14.0
 
