@@ -1,0 +1,28 @@
+{
+  "appHeader": {
+    "brand": "Portfolio",
+    "home": "Home",
+    "project": "Project",
+    "contact": "Contact",
+    "about": "About"
+  },
+  "heroSection": {
+    "exp": "My Skill",
+    "cv": "Get Resume"
+  },
+  "introSection": {
+    "about": "",
+    "and": "and",
+    "heading1": "As a programming enthusiast student, I’m constantly exploring and learning every day. 🤓",
+    "heading2": "I’m confident with foundational languages such as",
+    "heading3": "My areas of interest include",
+    "heading4": "Developing web applications and digital products",
+    "heading5": "And I often join real-world projects to sharpen my skills"
+  },
+  "experience": {
+    "title": "Experiences"
+  },
+  "skill": {
+    "title": "Skills"
+  }
+}

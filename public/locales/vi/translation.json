@@ -1,0 +1,28 @@
+{
+  "appHeader": {
+    "brand": "Portfolio",
+    "home": "Trang chủ",
+    "project": "Dự án",
+    "contact": "Liên hệ",
+    "about": "Về tác giả"
+  },
+  "heroSection": {
+    "exp": "Kinh nghiệm",
+    "cv": "Tải Resume"
+  },
+  "introSection": {
+    "about": "",
+    "and": "và",
+    "heading1": "Là sinh viên đam mê lập trình, tôi không ngừng khám phá và học hỏi mỗi ngày. 🤓",
+    "heading2": "Tôi tự tin với những ngôn ngữ cơ bản như",
+    "heading3": "Những mảng tôi quan tâm gồm",
+    "heading4": "Phát triển các ứng dụng web và sản phẩm số",
+    "heading5": "Và tôi thường tham gia dự án thực tế để rèn kỹ năng"
+  },
+  "experience": {
+    "title": "Kinh nghiệm của tôi"
+  },
+  "skill": {
+    "title": "Kỹ năng"
+  }
+}
