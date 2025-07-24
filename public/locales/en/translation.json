@@ -1,10 +1,11 @@
 {
   "appHeader": {
-    "brand": "Portfolio",
+    "brand": "Nguyen Quoc Doan",
     "home": "Home",
     "project": "Project",
     "contact": "Contact",
-    "about": "About"
+    "about": "About",
+    "skills": "My Skills"
   },
   "heroSection": {
     "exp": "My Skill",

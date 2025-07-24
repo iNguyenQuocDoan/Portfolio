@@ -2,6 +2,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import HeroLeft from "../components/sections/hero/hero.left";
 import HeroRight from "../components/sections/hero/hero.right";
 import { MdFileDownload } from "react-icons/md";
+import { AiFillFire } from "react-icons/ai";
 import bg from "../assets/section.svg";
 import Introduction from "../components/sections/introduction";
 import ResizeButton from "../components/sections/resize.button";
@@ -12,6 +13,20 @@ import Skill from "../components/sections/skill";
 
 const HomePage = () => {
   const { t } = useTranslation();
+
+  const handleSkillsClick = () => {
+    const skillsSection = document.getElementById("skills-section");
+    if (skillsSection) {
+      skillsSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const handleOpenCV = () => {
+    window.open(
+      `${process.env.PUBLIC_URL}/assets/Nguyen_Quoc_Doan_CV.pdf`,
+      "_blank"
+    );
+  };
 
   return (
     <div className="homepage-screen">
@@ -37,11 +52,22 @@ const HomePage = () => {
             </Col>
             <Col
               xs={12}
-              className="d-md-none d-flex mt-4 justify-content-center"
+              className="d-md-none d-flex mt-4 justify-content-center gap-3"
             >
+              <ResizeButton
+                btnText={t("heroSection.exp")}
+                btnIcons={<AiFillFire style={{ color: "orange" }} />}
+                btnStyle={{
+                  background: "unset",
+                  border: "1px solid var(--border-hero-right)",
+                  color: "var(--text-white-1)",
+                }}
+                onClick={handleSkillsClick}
+              />
               <ResizeButton
                 btnText={t("heroSection.cv")}
                 btnIcons={<MdFileDownload />}
+                onClick={handleOpenCV}
               />
             </Col>
           </Row>
@@ -59,7 +85,7 @@ const HomePage = () => {
         </Container>
       </section>
       <Divider />
-      <section>
+      <section id="skills-section">
         <Container>
           <Skill />
         </Container>

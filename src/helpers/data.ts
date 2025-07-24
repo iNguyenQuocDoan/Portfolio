@@ -1,14 +1,12 @@
-import nestImg from '../assets/project/nestjs.png';
-import nextjsImg from '../assets/project/nextjs.jpeg';
-import reactNativeImg from '../assets/project/react-native.png';
-import reactUltimateImg from '../assets/project/react-ultimate.png';
-import springMvcImg from '../assets/project/spring-mvc.png';
-import springRestImg from '../assets/project/spring-rest.png';
+import spotifyCloneImg from '../assets/project/spotify-clone.png';
+import daivietbloodImg from '../assets/project/daivietblood.png';
+import musicStreamingImg from '../assets/project/music-streaming.png';
+import ecommerceShopImg from '../assets/project/28shop-ecommerce.png';
+import monitoPetImg from '../assets/project/monito-pet.png';
+
 
 export const APP_DATA = {
-    YOUTUBE_URL: "https://www.youtube.com/@hoidanit",
-    TIKTOK_URL: "https://www.tiktok.com/@hoidanit",
-    UDEMY_URL: "https://www.udemy.com/user/eric-7039/",
+
     FACEBOOK_URL: "https://www.facebook.com/nguyenquocdoan.05082004.nokia",
     GIT_URL: "https://github.com/iNguyenQuocDoan"
 }
@@ -47,55 +45,48 @@ export const EXPERIENCES = [
 ]
 
 export const PROJECTS = [
-    // {
-    //     id: 1,
-    //     imgPath: reactNativeImg,
-    //     title: "React Native Basic",
-    //     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    //     githubLink: "https://hoidanit.vn/khoa-hoc/react-native-ultimate-phat-trien-ung-dung-mobile-66e7ab4578aaf477418cb538.html",
-    //     demoLink: "https://hoidanit.vn/khoa-hoc/react-native-ultimate-phat-trien-ung-dung-mobile-66e7ab4578aaf477418cb538.html"
-    // },
-    // {
-    //     id: 2,
-    //     imgPath: springRestImg,
-    //     title: "Java Spring REST",
-    //     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    //     githubLink: "https://hoidanit.vn/khoa-hoc/java-spring-rest-ultimate-for-beginners-6631cb577353ab6861b188f6.html",
-    //     demoLink: "https://hoidanit.vn/khoa-hoc/java-spring-rest-ultimate-for-beginners-6631cb577353ab6861b188f6.html"
-    // },
-    // {
-    //     id: 3,
-    //     imgPath: springMvcImg,
-    //     title: "Java Spring MVC",
-    //     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    //     githubLink: "https://hoidanit.vn/khoa-hoc/java-spring-mvc-ultimate-for-beginners-65ce0b770c05f4450fbd86ac.html",
-    //     demoLink: "https://hoidanit.vn/khoa-hoc/java-spring-mvc-ultimate-for-beginners-65ce0b770c05f4450fbd86ac.html"
-    // },
-    // {
-    //     id: 4,
-    //     imgPath: nextjsImg,
-    //     title: "React ProMax with Next.js",
-    //     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    //     githubLink: "https://hoidanit.vn/khoa-hoc/react-pro-max-voi-nextjs-lam-chu-toan-dien-reactjs-hien-dai-65198100e6bafa8caad417a6.html",
-    //     demoLink: "https://hoidanit.vn/khoa-hoc/react-pro-max-voi-nextjs-lam-chu-toan-dien-reactjs-hien-dai-65198100e6bafa8caad417a6.html"
-    // },
-    // {
-    //     id: 5,
-    //     imgPath: nestImg,
-    //     title: "Nest.js Basic",
-    //     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    //     githubLink: "https://hoidanit.vn/khoa-hoc/nestjs-voi-typescript-mongodb-sieu-de-64686ec6fb456bbb90663dd6.html",
-    //     demoLink: "https://hoidanit.vn/khoa-hoc/nestjs-voi-typescript-mongodb-sieu-de-64686ec6fb456bbb90663dd6.html"
-    // },
-    // {
-    //     id: 6,
-    //     imgPath: reactUltimateImg,
-    //     title: "React Ultimate",
-    //     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    //     githubLink: "https://hoidanit.vn/khoa-hoc/react-ultimate-react-co-ban-tu-z-toi-a-640b50b96cc592d780aab976.html",
-    //     demoLink: "https://hoidanit.vn/khoa-hoc/react-ultimate-react-co-ban-tu-z-toi-a-640b50b96cc592d780aab976.html"
-    // }
-]
+  {
+    id: 1,
+    imgPath: spotifyCloneImg,
+    title: "Spotify‑Style Music Streaming App",
+    description: "A music streaming application clone with dark theme, playlist management, and modern UI design. Built with React and styled components to replicate Spotify's user experience.",
+    githubLink: "https://github.com/iNguyenQuocDoan/MusicJs-01",
+    demoLink: "https://inguyenquocdoan.github.io/MusicJs-01/"
+  },
+  {
+    id: 2,
+    imgPath: daivietbloodImg,
+    title: "DaiVietBlood – Blood Donation Platform",
+    description: "A responsive blood donation platform with optimized chatbot, set up CI/CD, and integrated AI chatbot providing real-time assistance. Users can pick donation slots and complete registration. Built with ReactJS + TailwindCSS + Gemini. Timeline: 5/2025 - 7/2025.",
+    githubLink: "https://github.com/iNguyenQuocDoan/BloodDonationSystem",
+    demoLink: "https://daivietblood.vercel.app/"
+  },
+  {
+    id: 3,
+    imgPath: musicStreamingImg,
+    title: "Next.js Music Streaming App",
+    description: "A modern music streaming platform with Firebase Auth, search songs by title or artist, favorite/un-favorite tracks saved to user profile, browse genre categories (Pop, Bolero, Remix...), and CI-CD deployment. Built with NextJS + TailwindCSS + Firebase + Cloudinary. Timeline: 3/2025 - 7/2025.",
+    githubLink: "https://github.com/iNguyenQuocDoan/MusicApp",
+    demoLink: "https://nextmusix1.vercel.app/"
+  },
+  {
+    id: 4,
+    imgPath: ecommerceShopImg,
+    title: "28.Shop – Fashion E‑commerce Site",
+    description: "A comprehensive fashion e-commerce platform featuring responsive UI design and user-friendly interface. Built with HTML + TailwindCSS for optimal shopping experience. Timeline: 1/2025.",
+    githubLink: "https://github.com/iNguyenQuocDoan/project-3.1",
+    demoLink: "https://inguyenquocdoan.github.io/project-3.1/"
+  },
+  {
+    id: 5,
+    imgPath: monitoPetImg,
+    title: "Monito – Pet Adoption Landing Page",
+    description: "A pet shop homepage featuring responsive UI design and modern user interface. Built with HTML + CSS for seamless pet browsing experience. Timeline: 12/2024.",
+    githubLink: "https://github.com/iNguyenQuocDoan/Monitor",
+    demoLink: "https://inguyenquocdoan.github.io/Monitor/"
+  },
+];
+
 
 export const SKILLS_DATA = [
     'HTML',

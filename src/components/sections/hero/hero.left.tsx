@@ -10,6 +10,24 @@ import { AiFillFire } from "react-icons/ai";
 const HeroLeft = () => {
   const { t } = useTranslation();
 
+  const handleSkillsClick = () => {
+    const skillsSection = document.getElementById("skills-section");
+    if (skillsSection) {
+      skillsSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const handleOpenCV = () => {
+    try {
+      const cvPath = "/Nguyen_Quoc_Doan_CV.pdf";
+      window.open(cvPath, "_blank");
+      console.log("CV opened successfully!");
+    } catch (error) {
+      console.error("Error opening CV:", error);
+      alert("Không thể mở CV. Vui lòng thử lại!");
+    }
+  };
+
   return (
     <div className="hero-left">
       <h3>
@@ -25,10 +43,6 @@ const HeroLeft = () => {
       <Typewriter
         options={{
           strings: [
-            // "Software Developer",
-            // "Freelancer",
-            // "MERN Stack Developer",
-            // "Open Source Contributor",
             "Beginner Today, Builder Tomorrow",
             "Small Steps, 1% Progress",
           ],
@@ -40,11 +54,7 @@ const HeroLeft = () => {
       />
       <div className="mt-md-6 mt-3 mb-md-5 mb-2">
         <SocialMedia
-          // youtube={APP_DATA.YOUTUBE_URL}
           facebook={APP_DATA.FACEBOOK_URL}
-          // tiktok={APP_DATA.TIKTOK_URL}
-          // udemy={APP_DATA.UDEMY_URL}
-
           github={APP_DATA.GIT_URL}
         />
       </div>
@@ -57,10 +67,12 @@ const HeroLeft = () => {
             border: "1px solid var(--border-hero-right)",
             color: "var(--text-white-1)",
           }}
+          onClick={handleSkillsClick}
         />
         <ResizeButton
           btnText={t("heroSection.cv")}
           btnIcons={<MdFileDownload />}
+          onClick={handleOpenCV}
         />
       </div>
     </div>
