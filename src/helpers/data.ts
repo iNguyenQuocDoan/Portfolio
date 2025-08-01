@@ -101,7 +101,7 @@ export const SKILLS_DATA = [
     
    
     // 'Firebase',
-    'MaterialUI',
+    
     
     
   ]
